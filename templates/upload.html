@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Upload Log File</h1>
+
+    <div class="card">
+        <p>
+            Upload AWS, Azure, or server log files for analysis.
+            The system will process the file using Split, Map, Shuffle, and Reduce logic.
+        </p>
+
+        <form method="POST" enctype="multipart/form-data">
+
+            <input type="file" name="logfile" required>
+
+            <br><br>
+
+            <button type="submit">
+                Analyze Log File
+            </button>
+
+        </form>
+    </div>
+
+    <br>
+
+    <a href="/dashboard">Back To Dashboard</a>
+
+</div>
+
+</body>
+</html>
